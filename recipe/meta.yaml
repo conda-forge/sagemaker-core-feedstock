@@ -1,5 +1,5 @@
 {% set name = "sagemaker-core" %}
-{% set version = "1.0.50" %}
+{% set version = "1.0.52" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_core-{{ version }}.tar.gz
-  sha256: 269ea9b6ed96cad86f8ac7567337a817d59b59bbb78e81dc0a801af3c451c2df
+  sha256: cc3f41497d0e1ede2844f1c47627c74b4372ba77dffbce899f092bc81e799128
 
 build:
   noarch: python
