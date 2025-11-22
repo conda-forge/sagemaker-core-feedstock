@@ -1,5 +1,5 @@
 {% set name = "sagemaker-core" %}
-{% set version = "1.0.67" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_core-{{ version }}.tar.gz
-  sha256: 4bd5fcc5327f78b8c65e5efeb9a9bc6028aff55b560d48230a634d535ac6b7f2
+  sha256: dc2e0e56c17bd742fd6121f9c1bc87e232d4d0f63577389e9caa5066cae3e087
 
 build:
   noarch: python
@@ -20,15 +20,28 @@ requirements:
     - setuptools >=64
     - pip
   run:
+    - attrs >=20.3.0
+    - numpy >=1.9.0
+    - omegaconf >=2.1.0
+    - packaging >=20.0
+    - pandas >=1.0.0
+    - protobuf >=3.12,<5.0
+    - pytorch >=1.9.0
+    - pytz >=2021.1
+    - requests >=2.20.0,<3.0.0
+    - schema >=0.7.5
+    - scipy >=1.5.0
+    - smdebug_rulesconfig >=1.0.1
+    - typing_extensions >=4.9.0
     - python >={{ python_min }}
-    - boto3 >=1.35.36,<2.0.0
+    - boto3 >=1.35.75,<2.0.0
     - pydantic >=2.0.0,<3.0.0
     - pyyaml >=6.0,<7.0
     - jsonschema <5.0.0
     - platformdirs >=4.0.0,<5.0.0
-    - rich >=13.0.0,<15.0.0
+    - rich >=13.0.0,<14.0.0
     - mock >4.0,<5.0
-    - importlib-metadata <=9.0,>=1.4.0
+    - importlib-metadata <7.0,>=1.4.0
 
 test:
   imports:
