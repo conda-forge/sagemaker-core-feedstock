@@ -32,7 +32,7 @@ requirements:
 
 test:
   imports:
-    - sagemaker_core
+    - sagemaker.core
   commands:
     - pip check
   requires:
