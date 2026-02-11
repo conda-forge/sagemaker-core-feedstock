@@ -149,5 +149,6 @@ Feedstock Maintainers
 
 * [@benieric](https://github.com/benieric/)
 * [@claytonparnell](https://github.com/claytonparnell/)
+* [@mollyheamazon](https://github.com/mollyheamazon/)
 * [@mufaddal-rohawala](https://github.com/mufaddal-rohawala/)
 

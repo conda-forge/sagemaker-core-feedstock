@@ -1,5 +1,5 @@
 {% set name = "sagemaker-core" %}
-{% set version = "1.0.67" %}
+{% set version = "2.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_core-{{ version }}.tar.gz
-  sha256: 4bd5fcc5327f78b8c65e5efeb9a9bc6028aff55b560d48230a634d535ac6b7f2
+  sha256: 20cac6b0455a1012447f8914ee6daaf2e7933dd79a8999ee1937da9d3eae0c8c
 
 build:
   noarch: python
@@ -21,18 +21,34 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - boto3 >=1.35.36,<2.0.0
+    - boto3 >=1.42.2,<2.0.0
     - pydantic >=2.0.0,<3.0.0
     - pyyaml >=6.0,<7.0
     - jsonschema <5.0.0
     - platformdirs >=4.0.0,<5.0.0
-    - rich >=13.0.0,<15.0.0
+    - rich >=13.0.0,<14.0.0
     - mock >4.0,<5.0
-    - importlib-metadata <=9.0,>=1.4.0
+    - importlib-metadata <7.0,>=1.4.0
+    - typing_extensions >=4.9.0
+    - pytz >=2021.1
+    - requests >=2.20.0,<3.0.0
+    - attrs >=20.3.0
+    - packaging >=20.0
+    - protobuf >=3.12,<7.0.0
+    - pandas >=1.0.0
+    - numpy >=1.9.0
+    - smdebug-rulesconfig >=1.0.1
+    - schema >=0.7.5
+    - omegaconf >=2.1.0
+    - pytorch >=1.9.0
+    - scipy >=1.5.0
+    - cloudpickle >=2.0.0
+    - paramiko >=2.11.0
+    - tblib >=1.7.0
 
 test:
   imports:
-    - sagemaker_core
+    - sagemaker.core
   commands:
     - pip check
   requires:
@@ -53,3 +69,4 @@ extra:
     - claytonparnell
     - benieric
     - mufaddal-rohawala
+    - mollyheamazon
