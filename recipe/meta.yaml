@@ -1,5 +1,5 @@
 {% set name = "sagemaker-core" %}
-{% set version = "2.7.1" %}
+{% set version = "2.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_core-{{ version }}.tar.gz
-  sha256: 59f25c8ea19dd41eaf5df93cc3e0baa862e8492c8069f3d33633e88ec1b8a96f
+  sha256: 7f695da4538c9548fb42ad51f27db0039cd65f21b97c90075904f0257df4f265
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - setuptools >=64
     - pip
   run:
+    - cryptography >=46.0.0
     - python >={{ python_min }}
     - boto3 >=1.42.2,<2.0.0
     - pydantic >=2.0.0,<3.0.0
