@@ -20,7 +20,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/sagemaker-core-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/sagemaker-core-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -146,8 +148,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@benieric](https://github.com/benieric/)
-* [@claytonparnell](https://github.com/claytonparnell/)
 * [@mollyheamazon](https://github.com/mollyheamazon/)
 * [@mufaddal-rohawala](https://github.com/mufaddal-rohawala/)
+* [@mujtaba1747](https://github.com/mujtaba1747/)
 
