@@ -151,4 +151,5 @@ Feedstock Maintainers
 * [@mollyheamazon](https://github.com/mollyheamazon/)
 * [@mufaddal-rohawala](https://github.com/mufaddal-rohawala/)
 * [@mujtaba1747](https://github.com/mujtaba1747/)
+* [@aviruthen](https://github.com/aviruthen/)
 
